@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept - pregled</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+ 
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style_desert.css">
+    <script src="script_soloRecept.js"></script>
+    <script src="script_logout.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+    <script>document.cookie = "samesite=none; secure";</script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row header">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <img src="images/chef_hat.png" id="logoPic">
+                    <p id="nazivSajta">
+                        CookBook
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/serbia.png" id="serbian">
+                    &nbsp;&nbsp;
+                    <img src="images/england.png" id="english">
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="row navigation">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <a href="index.html">Početna</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="dropdown">
+                        <div class="dropdown" >
+                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <text class="hover_pom active_nav_item">Recepti</text>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="predjelo.html">Predjelo</a>
+                              <a class="dropdown-item" href="glavnoJelo.html">Glavno jelo</a>
+                              <a class="dropdown-item" href="desert.html">Desert</a>
+                              <a class="dropdown-item" href="uzina.html">Uzina</a>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="dodajRecept.html">Dodaj recept</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="mojNalog.html">Moj nalog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="info.html">O nama</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="logoutBtnDiv"><button class="btn btn-info" id="logoutBtn">Izloguj se</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- Center -->
+        <div class="row centerDiv">
+            <!-- Breadcrumbs -->
+            <div class="col-sm-12">
+                &nbsp;
+                <ul class="breadcrumb">
+                    <li id="putanja">/Recepti/</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <br>
+                <div class="centered_text">
+                    <!-- deserti -->
+                    <div id="recept_solo">
+
+                    </div>
+                    <br><br>
+                    <hr>
+                    <div class='offset-sm-4 col-sm-4 text-center'>
+                        <form>
+                            <h2><i>UTISCI</i></h2>
+                            <table class="table table-striped">
+                                <tr>
+                                    <td>Komentar:</td>
+                                    <td>
+                                        <textarea id="komentar" name="resume" rows="4" cols="50" placeholder="Komentar..."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center">
+                                        <button id="submitKomentar" class="btn btn-secondary">Komentariši</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="tezina">Ocena:</label>
+                                    </td>
+                                    <td>
+                                        <select id="ocena_input" name="tezina">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center">
+                                        <button id="submitOcena" class="btn btn-secondary">Oceni</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+        <!-- Banners -->
+        <div class="row">
+            <div class="col-sm-12 banner lightbluebg">
+                <a href="https://www.recepti.com/" target=”_blank”>Recepti.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://tasty.co/topic/meal-prep" target=”_blank”>Tasty.co</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.delish.com/cooking/recipe-ideas/g3166/cheap-easy-recipes/" target=”_blank”>Delish.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-sm-12 footer lightbluebg">
+                Copyright 2021, Jevtić Ivan, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style_desert.css">
+    <script src="z_script_index.js"></script>
+    <script src="z_script_logout.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row header">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <img src="images/chef_hat.png" id="logoPic">
+                    <p id="nazivSajta">
+                        CookBook
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/serbia.png" id="serbian">
+                    &nbsp;&nbsp;
+                    <img src="images/england.png" id="english">
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="row navigation">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <a href="z_index.html" class="active_nav_item">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="dropdown">
+                        <div class="dropdown" >
+                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <text class="hover_pom">Recipes</text>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="predjelo.html">Appetizer</a>
+                              <a class="dropdown-item" href="glavnoJelo.html">Main course</a>
+                              <a class="dropdown-item" href="desert.html">Dessert</a>
+                              <a class="dropdown-item" href="uzina.html">Snack</a>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="z_eng_dodajRecept.html">Add a recipe</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="z_mojNalog.html">My profile</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="z_info.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="logoutBtnDiv"><button class="btn btn-info" id="logoutBtn">Log out</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- Center -->
+        <div class="row centerDiv">
+            <!-- Breadcrumbs -->
+            <div class="col-sm-12">
+                &nbsp;
+                <ul class="breadcrumb">
+                    <li>/Home</li>
+                  </ul>
+            </div>
+            <!-- Main -->
+            <div class="col-lg-12 col-md-12">
+                <h1 id="wellcomeMsg">Wellcome</h1>
+                <br>
+                <hr>
+                <div class="centered_text">
+                    <h1>Top recipes</h1>
+                    <!-- Top 3 recepta: -->
+                    <div id="recepti">
+
+                    </div>
+
+                    <!-- kursevi -->
+                    <hr>
+                    <h1>Courses in our offer</h1>
+                    <br>
+                    <hr>
+                    <div>
+                        <h3>Cooking therapy</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/cookingTherapy.jpg"></center>
+                        <div class="text_blog">
+                            The modern lifestyle has also brought us a complete departure from creative activities that require dexterity. We have lost the ability to observe details and find satisfaction in everyday things and actions. This way of life distances us from ourselves and becomes conducive to the development of depression and anxiety. More and more psychotherapists are recommending manual activities as adjunctive therapy, preferably those that require a certain amount of creativity.
+
+                            Cooking therapy is used today in a large number of mental health clinics. It is used to treat a number of disorders such as depression, anxiety, eating disorders, addiction diseases as well as disorders caused by the speed of the modern lifestyle. The importance of cooking therapy is all the greater if we keep in mind that the largest number of these disorders also gives excess weight within the clinical picture.
+                        </div>
+                        <br><br>
+                        <h5>
+                            Every Friday from 10am to 12am
+                            <br>
+                            Price: 3.400 din
+                        </h4>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Weekly Lunch Workshop</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/nedeljniRucak.jpg"></center>
+                        <div class="text_blog">
+                            <div class="text_blog">
+                                Gather family, friends, kids or parents - people you love and cook a great home-cooked meal with us and then share those precious moments with yours while enjoying the meal you have prepared together!
+                            </div>
+                            <br><br>
+                            <h5>Every Sunday from 12am to 2pm
+                                <br>
+                                Price: 1.800 din
+                            </h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Basics of barbecue</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/grill.jpg"></center>
+                        <div class="text_blog">
+                            In the summer of 2020, we will be more active than in previous years - a lot of people stay in Belgrade, so we decided to offer new options for summer fun with good food and drinks.
+
+                            At the course "Basics of barbecue 1" we deal with cooking on an open flame - we get acquainted with the preparation of food on the grill through classes and even longer through top specialties!
+   
+                            It is the right time to enjoy the outdoors in our beautiful garden in the heart of the Star Forest!
+                        </div>
+                        <br><br>
+                        <h5>Every Saturday from 10am to 12am
+                            <br>
+                            Price: 2.800 din
+                        </h4>
+                    </div>
+                    <br>
+
+                    <!-- blogovi -->
+                    <hr>
+                    <h1>Highlights from blogs</h1>
+                    <br>
+                    <hr>
+                    <div>
+                        <h3>Buckwheat as part of a healthy diet</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/heljda.png"></center>
+                        <div class="text_blog">
+                            Buckwheat has all the good properties as whole grains, in addition it is rich in lysine, an essential amino acid that is important for bone growth and blood renewal. Buckwheat is also an ingredient in buckwheat, which reduces the risk of sterility. It strengthens the body, rejuvenates blood vessels, eliminates fatigue, warms, dries, increases circulation in the arms and legs, builds blood, increases urine output.
+
+                            It is great for memory and concentration. It lowers blood pressure, treats arteriosclerosis and constipation. It is also effective in treating lung and kidney diseases. It is recommended for people with indigestion, convalescents and the elderly. Contributes to the proper functioning of the intestines, it is suitable for a vegetarian diet (because it contains a significant percentage of protein).
+    
+                            Buckwheat stalk has pharmaceutical value, because it contains the substance rutin, which is used as a means of stopping bleeding and increasing the resistance of capillaries. Therefore, buckwheat has a positive effect in the treatment of circulatory diseases, varicose veins, capillary rupture. It also has a positive effect in the fight against poor memory, rheumatism, glaucoma, diabetes and stomach diseases.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Celery against leukemia</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/celer.jpg"></center>
+                        <div class="text_blog">
+                            Consumption of foods such as celery and primrose, which contain the natural flavonoid apigenin, can prevent leukemia, concluded Dutch experts from the University of Groningen.
+
+                            According to Maikel Pepelenbosch, one of the participants in the research, the tests showed that apigenin - a common ingredient in fruits and vegetables - is able to stop the development of two types of leukemia cells and reduce the chances of their survival, Reuters reported.
+    
+                            On the other hand, however, the Dutch team found that apigenin can reduce the positive effects of chemotherapy in people who have already been diagnosed with leukemia.
+    
+                            Flavolnoids are compounds with antioxidant properties, which protect cells from damage by oxygen molecules.
+    
+                            Some previous research has shown that apigenin, which is found in celery, primrose, red wine, tomato sauce and various other plant-based foods, can also be useful in preventing ovarian cancer.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Ren and a healthy organism</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/ren.jpg"></center>
+                        <div class="text_blog">
+                            Freshly grated rhubarb root is exceptional as an addition to sauces, and the combination of rhubarb and sour cream or milk, which is served with roast pork, smoked fish, salads and ham, is also very tasty.
+
+                            It is usually taken as a medicine with sour dishes, as a syrup, cooked in white wine or water, as a juice or tea. However, it should not be overdone because it can cause diarrhea and vomiting.
+    
+                            Rhubarb is rich in vitamin C (more than 100 milligrams in 100 grams of fresh root), and there are also glycosides, morosin, sinigrin, glutamine, glucose, potassium, acid sulfate, as well as essential oils that give it anger.
+    
+                            Ren is recommended for cleansing the blood, expelling stones and sand from the kidneys, for sweating and expelling urine. It is popularly used as a medicine against lung diseases, rheumatism, gout, sneezing, for expelling secretions from the respiratory tract, against scurvy.
+    
+                            It is also valuable as a stimulator of the digestive organs, it causes increased secretion of gastric and intestinal glands, as well as bile and pancreas. Helps destroy colic bacilli.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Banners -->
+        <div class="row">
+            <div class="col-sm-12 banner lightbluebg">
+                <a href="https://www.recepti.com/" target=”_blank”>Recepti.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://tasty.co/topic/meal-prep" target=”_blank”>Tasty.co</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.delish.com/cooking/recipe-ideas/g3166/cheap-easy-recipes/" target=”_blank”>Delish.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-sm-12 footer lightbluebg">
+                Copyright 2021, Jevtić Ivan, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu
+            </div>
+        </div>
+    </div>
+</body>
+</html>

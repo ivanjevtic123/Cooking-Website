@@ -1,0 +1,25 @@
+#wellcomeMsg {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.centered_text {
+    text-align: center;
+}
+
+.img_blogs {
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    border-radius: 5%;
+}
+
+.text_blog {
+    padding-top: 4px;
+    font-size: 20px;
+}
+
+hr {
+    border-top: 1px solid whitesmoke;
+}

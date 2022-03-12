@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style_desert.css">
+    <script src="script_index.js"></script>
+    <script src="script_logout.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row header">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <img src="images/chef_hat.png" id="logoPic">
+                    <p id="nazivSajta">
+                        CookBook
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/serbia.png" id="serbian">
+                    &nbsp;&nbsp;
+                    <img src="images/england.png" id="english">
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="row navigation">
+            <div class="col-sm-12">
+                <div class="d-flex justify-content-center">
+                    <a href="index.html" class="active_nav_item">Početna</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="dropdown">
+                        <div class="dropdown" >
+                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <text class="hover_pom">Recepti</text>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="predjelo.html">Predjelo</a>
+                              <a class="dropdown-item" href="glavnoJelo.html">Glavno jelo</a>
+                              <a class="dropdown-item" href="desert.html">Desert</a>
+                              <a class="dropdown-item" href="uzina.html">Uzina</a>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="dodajRecept.html">Dodaj recept</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="mojNalog.html">Moj nalog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="info.html">O nama</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="logoutBtnDiv"><button class="btn btn-info" id="logoutBtn">Izloguj se</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- Center -->
+        <div class="row centerDiv">
+            <!-- Breadcrumbs -->
+            <div class="col-sm-12">
+                &nbsp;
+                <ul class="breadcrumb">
+                    <li>/Početna</li>
+                  </ul>
+            </div>
+            <!-- Main -->
+            <div class="col-lg-12 col-md-12">
+                <h1 id="wellcomeMsg">Dobro došli</h1>
+                <br>
+                <hr>
+                <div class="centered_text">
+                    <h1>Top recepti</h1>
+                    <!-- Top 3 recepta: -->
+                    <div id="recepti">
+
+                    </div>
+
+                    <!-- kursevi -->
+                    <hr>
+                    <h1>Kursevi u našoj ponudi</h1>
+                    <br>
+                    <hr>
+                    <div>
+                        <h3>Terapija kuvanjem</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/cookingTherapy.jpg"></center>
+                        <div class="text_blog">
+                        Moderan stil života doneo nam je i potpuno udaljavanje od kreativnih aktivnosti koje zahtevaju spretnost ruku. Izgubili smo sposobnost da posmatramo detalje i pronađemo zadovoljstvo u svakodnevnim stvarima i radnjama. Ovakav način života nas udaljava od nas samih i postaje pogodan za razvoj depresije i anksioznosti. Sve više psihoterapeuta preporučuje manuelne aktivnosti kao dopunsku terapiju, najbolje one za koje je potrebna određena doza kreativnosti.
+
+                        Terapija kuvanjem se danas koristi u velikom broju klinika za mentalno zdravlje. Koristi se za lečenje brojnih poremećaja kao što su depresija, anksioznost, poremećaji ishrane, bolesti zavisnosti kao i poremećaja izazvanih brzinom modernog stila života. Značaj terapije kuvanjem utoliko je veći ako se ima u vidu da najveći broj ovih poremećaja daje i prekomerenu težinu u okviru kliničke slike.
+                        </div>
+                        <br><br>
+                        <h5>
+                            Svakog petka od 10-12h
+                            <br>
+                            Cena radionice: 3.400 din
+                        </h4>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Radionica "Nedeljni ručak"</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/nedeljniRucak.jpg"></center>
+                        <div class="text_blog">
+                            <div class="text_blog">
+                            Okupite porodicu, prijatelje, klince ili roditelje – ljude koje volite i kuvajte sa nama odličnu domaću klopu a zatim podelite sa svojima te dragocene trenutke uživajući u obroku kojeg ste zajedno pripremili!
+                            </div>
+                            <br><br>
+                            <h5>Svake nedelje od 12-14h
+                                <br>
+                                Cena radionice: 1.800 din
+                            </h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Osnove roštilja</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/grill.jpg"></center>
+                        <div class="text_blog">
+                        Leto 2020. bićemo aktivniji nego prethodnih godina – puno ljudi ostaje u Beogradu pa smo rešili da ponudimo nove opcije za letnju zabavu uz dobru klopu i pića.
+
+                        Na kursu „Osnove roštilja 1“ bavimo se kuvanjem na otvorenom plamenu – upoznajemo se sa pripremom hrane na roštilju kroz niz časova i još duži niz vrhunskih specijaliteta!
+
+                        Pravo je vreme da uživamo na otvorenom u našoj prelepoj bašti u srcu zvezdarske šume!
+                        </div>
+                        <br><br>
+                        <h5>Svake subote od 10-12h
+                            <br>
+                            Cena radionice: 2.800 din
+                        </h4>
+                    </div>
+                    <br>
+
+                    <!-- blogovi -->
+                    <hr>
+                    <h1>Izdvajamo iz blogova</h1>
+                    <br>
+                    <hr>
+                    <div>
+                        <h3>Heljda kao deo zdrave ishrane</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/heljda.png"></center>
+                        <div class="text_blog">
+                        Heljda ima sve dobre osobine kao i integralne žitarice, osim toga bogata je lizinom, esencijalnom aminokiselinom koja je značajna za rast kostiju i obnavljanje krvi. Sastojak heljde je i agrimin koji smanjuje rizik sterilnosti. Ona jača organizam, podmlađuje krvne sudove, otklanja umor, zagreva, isušuje, povećava cirkulaciju u rukama i nogama, izgrađuje krv, povećava lučenje urina.
+
+                        Odlična je za pamćenje i koncentraciju. Snižava pritisak, leči arteriosklerozu i zatvor. Delotvorna je i u lečenju bolesti pluća i bubrega. Preporučuje se osobama sa probavnim smetnjama, rekonvalescentima i starijim osobama. Doprinosi pravilnom radu creva, pogodna je za vegetarijansku ishranu (jer sadrži znatan procenat proteina).
+
+                        Stabljika heljde ima farmaceutsku vrednost, jer sadrži supstancu rutin, koja se koristi kao sredstvo koje zaustavlja krvarenje i povećava otpornost kapilara. Zato heljda ima pozitivno dejstvo u lečenju bolesti krvotoka, proširenja vena, pucanja kapilara. Ona ima pozitivno dejstvo i u borbi protiv slabe memorije, reume, glaukoma, dijabetesa i stomačnih oboljenja.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Celerom protiv leukemije</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/celer.jpg"></center>
+                        <div class="text_blog">
+                        Konzumiranjem hrane kao što su celer i peršun, koja sadrži prirodni flavonoid apigenin, može da se spreči leukemija, zaključili su holandski stručnjaci sa Groningenskog univerziteta.
+
+                        Prema rečima Maikela Pepelenboša, jednog od učesnika istraživanja, testovi su pokazali da je apigenin - uobičajen sastojak voća i povrća - u stanju da zaustavi razvoj dve vrste leukemičnih ćelija i smanji izglede za njihov opstanak, preneo je Rojters.
+
+                        S druge strane, međutim, holandski tim je utvrdio da apigenin može da umanji pozitivne efekte hemoterapije kod osoba kod kojih je leukemija već utvrđena.
+
+                        Flavolnoidi su jedinjenja sa antioksidantskim svojstvima, koja štite ćelije od oštećenja molekulima kiseonika.
+
+                        Neka prethodna istraživanja su pokazala da apigenin, kojeg ima u celeru, peršunu, crnom vinu, paradajz sosu i raznoj drugoj hrani na bazi biljaka, može takođe da bude koristan u prevenciji raka jajnika.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div>
+                        <h3>Ren i zdrav organizam</h3>
+                        <center><img class="img_blogs" src="images/blogoviKursevi/ren.jpg"></center>
+                        <div class="text_blog">
+                        Sveže izrendan koren rena je izuzetan kao dodatak sosovima, a veoma je ukusna i kombinacija rena i kisele pavlake ili mleka, koja se služi uz svinjsko pečenje, dimljenu ribu, salate i šunku.
+
+                        Kao lek obično se uzima uz kisela jela, kao sirup, kuvan u belom vinu ili vodi, kao sok ili čaj. Ipak, s njim ne bi trebalo preterivati jer može da izazove dijareju i povraćanje.
+
+                        Ren je bogat vitaminom C (više od 100 miligrama u 100 grama svežeg korena), a tu su i glikozid, morozin, sinigrin, glutamin, glukoza, kalijum, kiseli sulfat, kao i eterična ulja koja mu daju ljutinu.
+
+                        Ren se preporučuje za čišćenje krvi, izbacivanje kamena i peska iz bubrega, za znojenje i izbacivanje mokraće. U narodu se koristi kao lek protiv bolesti pluća, reume, gihta, kijavice, za izbacivanje sekreta iz disajnih puteva, protiv skoruba.
+
+                        Dragocen je i kao stimulator organa za varenje, izaziva pojačanu sekreciju želudačnih i crevnih žlezda, kao i žuči i pankreasa. Pomaže kod uništavanja koli-bacila.
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Banners -->
+        <div class="row">
+            <div class="col-sm-12 banner lightbluebg">
+                <a href="https://www.recepti.com/" target=”_blank”>Recepti.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://tasty.co/topic/meal-prep" target=”_blank”>Tasty.co</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.delish.com/cooking/recipe-ideas/g3166/cheap-easy-recipes/" target=”_blank”>Delish.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-sm-12 footer lightbluebg">
+                Copyright 2021, Jevtić Ivan, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu
+            </div>
+        </div>
+    </div>
+</body>
+</html>

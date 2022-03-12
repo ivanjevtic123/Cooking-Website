@@ -1,0 +1,154 @@
+.col-sm-12 {
+    padding: 0px;
+}
+
+* {
+    color: #fffefd;
+}
+
+input {
+    color: rgb(80, 80, 80);
+}
+
+textarea {
+    color: rgb(80, 80, 80);
+}
+
+option {
+    color: rgb(80, 80, 80);
+}
+
+select {
+    color: rgb(80, 80, 80);
+}
+
+.header {
+    background-color: #7C98B3;
+}
+
+.navigation {
+    background-color: #75859b;
+}
+
+a {
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+a:hover {
+    color: rgb(58, 57, 57);  
+    text-decoration: none;
+}
+
+#logoPic {
+    padding-top: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+#serbian {
+    padding-top: 12px;
+    height: 30px;
+    width: 30px;
+}
+
+#english {
+    padding-top: 12px;
+    height: 30px;
+    width: 30px;
+}
+
+#nazivSajta {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #536B78;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    font-weight: bold;
+    /* font-style: italic; */
+    background-color: #6a92ac;
+    color: rgb(4, 21, 56);
+}
+
+.centerDiv {
+    background-image: url("images/cake_3.jpg");/*cake_3, cake_2, wood.jpg*/
+    background-color: #93acc0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-color: #CEE5F2;*/
+    padding-bottom: 180px;
+}
+
+/*Breadcrubs-start: ...............................................*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    /*background-color: #93acc0;*/
+    background-color: transparent;
+}
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/*Breadcrumbs-end..................................................*/
+#dropdownMenuButton {
+    margin-top: -8px;
+}
+
+.dropdown-item:hover {
+    background-color: #7C98B3;
+}
+
+.hover_pom:hover {
+    width: 40px;
+    color: rgb(58, 57, 57);  
+}
+
+.dropdown-item:active {
+    background-color: #75859b;
+}
+
+.active_nav_item {
+    color: burlywood;
+}
+
+/*...........................................................................*/
+#logoutBtn {
+    height: 36px;
+    padding-top: 1px;
+}
+
+#logoutBtnDiv {
+    padding-top: 4px;
+}
